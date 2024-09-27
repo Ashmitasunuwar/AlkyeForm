@@ -29,7 +29,7 @@ function SecondPage() {
 
                 <div className='pswdbtn '>
                     <div className='pswdpattern'> Use a minimum of 6 characters (case sensitive) with at least one number or special character.</div>
-                    <button className="btn btn-dark passwordbtn" ><strong>continue</strong></button></div>
+                    <button className="btn btn-dark passwordbtn" ><strong>Agree & Continue</strong></button></div>
 
             </div>
             <div>

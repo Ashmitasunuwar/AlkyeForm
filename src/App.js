@@ -1,9 +1,10 @@
-import FirstPage from "./components/FirstPage";
-import logo from '../src/Logo/Logo.png'
+
 import '../src/css/style.css'
+import FirstPage from './components/FirstPage';
+import SecondPage from './components/SecondPage';
+import logo from '../src/Logo/Logo.png'
 import FooterPage from "./components/FooterPage";
 import { Routes, Route, Link } from "react-router-dom";
-import SecondPage from "./components/SecondPage";
 
 function App() {
 
@@ -12,7 +13,6 @@ function App() {
 
   return (
     <div className="App">
-
       <div className="mainsection" >
 
         <div className="innerbox ">
@@ -20,7 +20,13 @@ function App() {
             <img className="logoimg" src={logo} height={59} width={135} alt="logo not found" />
           </div>
           <div className="container">
-            <FirstPage />
+            <Routes>
+              <Route path="/" element={<FirstPage />} />
+
+              <Route path="/password" element={<SecondPage />} />
+
+
+            </Routes>
           </div>
 
 
@@ -32,6 +38,7 @@ function App() {
         </div>
 
       </div>
+
 
     </div>
   );

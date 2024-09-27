@@ -15,11 +15,11 @@ function FirstPage() {
 
     }
 
-    const btnClickHandler = (email) => {
+    const btnClickHandler = () => {
         console.log('btn clicked',)
         if (email) {
 
-            //  navigate('second')
+            navigate('/password')
         }
 
     }
@@ -40,7 +40,7 @@ function FirstPage() {
             </div>
             <div className='input-email col-md-6'>
                 <input className='emailInput' type='email' value={email} placeholder='email' onChange={(e) => { emailHandler(e) }} />
-
+                <p >{'Use a minimum of 6 characters (case sensitive) with at least one number or special character.'}</p>
                 <div className='emailbtn'> <button className="btn btn-dark" onClick={btnClickHandler}><strong>continue</strong></button></div>
 
 
