@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import FirstPage from "./components/FirstPage";
+import logo from '../src/Logo/Logo.png'
+import '../src/css/style.css'
+import FooterPage from "./components/FooterPage";
+import { Routes, Route, Link } from "react-router-dom";
+import SecondPage from "./components/SecondPage";
 
 function App() {
+
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className="mainsection" >
+
+        <div className="innerbox ">
+          <div className="logo">
+            <img className="logoimg" src={logo} height={59} width={135} alt="logo not found" />
+          </div>
+          <div className="container">
+            <FirstPage />
+          </div>
+
+
+
+        </div>
+
+        <div className="footercls ">
+          <FooterPage />
+        </div>
+
+      </div>
+
     </div>
   );
 }

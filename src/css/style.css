@@ -1,0 +1,210 @@
+body {
+    background-color: #F4F4F4;
+}
+
+.mainsection {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F4F4F4;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+}
+
+.innerbox {
+    margin: 40px;
+    width: 95vw;
+    height: 80vh;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.logoimg {
+    margin: 100px;
+
+}
+
+.eyeIcon {
+    width: 24px;
+    height: 24px;
+
+
+}
+
+.firstPage,
+.secondpage {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.emailText,
+.passwordtext .input-email,
+.input-pswd {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pswdpattern {
+    width: 300px;
+    height: 30px;
+    font-family: Söhne Test;
+    font-size: 11px;
+    font-weight: 100;
+    line-height: 15px;
+    text-align: left;
+    margin-top: 5px;
+
+}
+
+.emailbtn {
+    margin: 10px 0px 0px 300px;
+}
+
+.pswdbtn {
+    display: flex;
+    justify-content: left;
+}
+
+.passwordbtn {
+    margin: 10px;
+}
+
+.emailInput,
+.pswdInput {
+    width: 400px;
+    height: 40px;
+    text-align: center;
+}
+
+.pswdPara {
+    font-family: Söhne Test;
+    font-size: 11px;
+    font-weight: 100;
+    line-height: 15px;
+    text-align: left;
+    margin-left: 60px;
+}
+
+
+.footercls {
+    height: 38vh;
+    width: 100vw;
+    background-color: black;
+
+
+}
+
+.fontcls {
+    src: local('./fonts/test-soehne-buch.woff2');
+    font-family: 'test-soehne-buch';
+    color: green;
+}
+
+.footerMain {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.iconimg {
+    margin: 10px 10px;
+}
+
+
+
+.icons,
+.footerInfo,
+.footerlogo {
+    border-color: 2px solid white;
+    height: 11vh;
+    width: 100%;
+    color: #F4F4F4;
+    margin-left: 50px;
+    margin-top: 15px;
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+
+    .mainsection {
+        width: 115%;
+        height: 116%;
+
+    }
+
+    .innerbox {
+        margin: 20px;
+        width: 90vw;
+        height: 80vh;
+
+    }
+
+    .emailInput,
+    .pswdInput {
+        margin-top: 15px;
+        width: 300px;
+        height: 40px;
+        text-align: start;
+    }
+
+    .footercls {
+        width: 115%;
+        position: fixed;
+        margin-top: 20px;
+
+    }
+
+    .emailbtn {
+        margin-top: 40px;
+        margin-left: 120px;
+    }
+
+    .footerInfo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .pswdpattern {
+        text-decoration: underline;
+        width: 180px;
+        height: 30px;
+        margin-right: 10px;
+
+
+    }
+
+    .pswdInput {
+        font-style: bold;
+    }
+
+    .pswdbtn {
+        margin-top: 15px;
+    }
+
+
+    .pswdPara {
+        width: 100%;
+        margin-left: 0px;
+        font-size: 10px;
+        font-weight: 100;
+        line-height: 15px;
+        text-align: left;
+        margin-top: 8px;
+
+    }
+
+
+
+}
