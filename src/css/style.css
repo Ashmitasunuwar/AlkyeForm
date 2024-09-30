@@ -9,7 +9,6 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
-
 }
 
 .innerbox {
@@ -89,7 +88,7 @@ body {
 
 
 .footercls {
-    height: 38vh;
+    height: 40vh;
     width: 100vw;
     background-color: black;
 

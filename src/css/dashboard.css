@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+
+}
+
+.welcomemain {
+    color: white;
+}
+
+.cardcontainer {
+    width: 85vw;
+    margin: auto;
+    margin-bottom: 50px;
+
+}
+
+
+.titlepara {
+
+    margin: 30px;
+
+}
+
+.cardimage {
+
+
+    border: 10px solid black;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .cardcontainer {
+        width: 85vw;
+        margin: auto;
+        margin-bottom: 50px;
+
+    }
+}
